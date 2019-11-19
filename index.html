@@ -32,12 +32,15 @@
             document.getElementById("pole2").innerHTML = znak2;
             document.getElementById("pole3").innerHTML = znak3;
 
+            ile++;
+
             if ((x1 == x2) && (x1 == x3)) {
                 document.getElementById("wynik").innerHTML = "<h2>Brawo<h2>";
+                ileWygranych++;
             } else {
                 document.getElementById("wynik").innerHTML = "<h2>graj dalej<h2>";
             }
-
+            document.getElementById("ileG").innerHTML = "<h3>Gier: " + ile + "<br>Wygranych:" + ileWygranych + " </h3>";
 
         }
     </script>
@@ -57,7 +60,7 @@
 
     </div>
 
-</body></html>
+</body></html> 
 
 
 
